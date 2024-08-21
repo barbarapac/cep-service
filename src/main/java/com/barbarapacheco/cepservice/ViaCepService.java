@@ -2,8 +2,10 @@ package com.barbarapacheco.cepservice;
 
 import jakarta.enterprise.context.Dependent;
 import jakarta.enterprise.inject.Alternative;
+import jakarta.inject.Named;
 
-//@Dependent @Alternative
+@Dependent //@Alternative
+@Named(value = "ViaCepService")
 public class ViaCepService extends AbstractCepService {
 
     public ViaCepService() {

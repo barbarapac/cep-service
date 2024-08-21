@@ -1,8 +1,11 @@
 package com.barbarapacheco.cepservice;
 
 import jakarta.enterprise.context.Dependent;
+import jakarta.enterprise.inject.Alternative;
+import jakarta.inject.Named;
 
-@Dependent 
+@Dependent //@Alternative
+@Named(value = "PostmonCepServiceImpl") 
 public class PostmonCepServiceImpl extends AbstractCepService {
 
     public PostmonCepServiceImpl() {
